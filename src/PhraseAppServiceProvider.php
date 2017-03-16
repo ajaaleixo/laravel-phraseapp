@@ -3,7 +3,7 @@
 namespace Ajaaleixo\PhraseApp;
 
 use Illuminate\Support\ServiceProvider;
-use Ajaaleixo\PhraseApp\Commands\UpdateCommand;
+use Ajaaleixo\PhraseApp\Commands\DownloadCommand;
 
 class PhraseAppServiceProvider extends ServiceProvider
 {
@@ -13,10 +13,10 @@ class PhraseAppServiceProvider extends ServiceProvider
             __DIR__.'/../resources/config/laravel-phraseapp-client.php' => config_path('laravel-phraseapp.php'),
         ], 'config');
 
-        $this->app['command.phraseapp:update'] = $this->app->make(UpdateCommand::class);
+        $this->app['command.phraseapp:download'] = $this->app->make(DownloadCommand::class);
 
         $this->commands([
-            'command.phraseapp:update',
+            'command.phraseapp:download',
         ]);
     }
 

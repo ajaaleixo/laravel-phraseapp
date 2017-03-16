@@ -42,7 +42,7 @@ return [
      * The ones listed below are the generic translation files that
      * a boilerplate should have.
      *
-     * TODO: Add support to tag mapped to file name
+     * TODO: Add support to tag mapped to file name and different formats
      */
     'tags' => [
         'auth',
@@ -76,5 +76,10 @@ return [
          * API Key.
          */
         'key' => env('PHRASEAPP_API_KEY'),
+
+        /*
+         * Number of seconds to avoid hitting PhraseApp API
+         */
+        'sleep' => 1,
     ],
 ];
