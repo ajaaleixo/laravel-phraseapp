@@ -10,9 +10,20 @@ return [
     'enabled' => env('PHRASEAPP_CLIENT_ENABLED', true),
 
     /*
+     * API Key.
+     */
+    'api_key' => env('PHRASEAPP_API_KEY'),
+
+    /*
      * Once you setup PhraseApp there will be a project id.
      */
     'project_id' => env('PHRASEAPP_PROJECT_ID'),
+
+    /*
+     * Identification
+     * NOTE: You should change this to identify your app against your account.
+     */
+    'identification' => 'Ajaaleixo Laravel PhraseApp Package (andre.aleixo@olx.com)',
 
     /*
      * List of locales that you want to fetch from PhraseApp.
@@ -51,4 +62,19 @@ return [
      *
      */
     'format' => 'laravel',
+
+    /*
+     * API Configs
+     */
+    'api' => [
+        /*
+         * URI in case api version changes.
+         */
+        'uri' => 'https://api.phraseapp.com/api/v2/',
+
+        /*
+         * Request Timeout.
+         */
+        'timeout' => 5.0,
+    ],
 ];
