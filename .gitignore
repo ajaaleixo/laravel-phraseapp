@@ -1,6 +1,9 @@
 vendor/
 node_modules/
 
+.idea
+composer.lock
+
 # Laravel 4 specific
 bootstrap/compiled.php
 app/storage/
