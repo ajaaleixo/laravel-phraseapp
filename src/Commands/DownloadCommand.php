@@ -3,9 +3,10 @@
 namespace Ajaaleixo\PhraseApp\Commands;
 
 use Ajaaleixo\PhraseApp\Client\PhraseAppClient;
-use Ajaaleixo\PhraseApp\Utils\LocaleFileWriter;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Config\Repository;
+use Illuminate\Contracts\Filesystem\Filesystem;
+use Illuminate\Support\Facades\Storage;
 
 class DownloadCommand extends Command
 {
@@ -15,16 +16,14 @@ class DownloadCommand extends Command
 
     protected $config;
 
-    /**
-     * UpdateCommand constructor.
-     *
-     * @param Repository $config
-     */
-    public function __construct(Repository $config)
+    protected $files;
+
+    public function __construct(Repository $config, Filesystem $files)
     {
         parent::__construct();
 
         $this->config = $config;
+        $this->files = $files;
     }
 
     public function handle()
@@ -46,14 +45,28 @@ class DownloadCommand extends Command
         // Fetch translation per tag per locale
         foreach ($locales as $locale) {
             foreach ($tags as $tag) {
-                // Use tag as the file to put the content in
-                $this->info(sprintf('Fetching [%s] [tag:%s]..', $locale, $tag));
+
+                $this->info(sprintf('Fetching [%s] [tag:%s]', $locale, $tag));
+
                 $content = $client->downloadLocale($locale, $tag);
-                $bytes = LocaleFileWriter::write($content, $locale, $tag);
-                $this->info(sprintf('  Fetched %s bytes', $bytes));
+                $path = $this->makeFilePath($locale, $tag);
+                Storage::disk('lang')->put($path, $content);
+
+                $this->info(sprintf('Stored file [%s]', $path));
+
                 sleep($seconds);
             }
         }
+    }
+
+    protected function makeFilePath($locale, $tag)
+    {
+        return sprintf('%s/%s.php', $this->makeLocaleFolder($locale), $tag);
+    }
+
+    protected function makeLocaleFolder(string $locale)
+    {
+        return explode('-', $locale)[0];
     }
 
     protected function makeClient():PhraseAppClient
