@@ -1,9 +1,4 @@
 <?php
-/** Laravel-PhraseApp-Client
- *
- * (The MIT license)
- * Copyright (c) 2017 andrealeixo.com
- */
 
 namespace Ajaaleixo\PhraseApp;
 
@@ -23,7 +18,6 @@ class PhraseAppServiceProvider extends ServiceProvider
         $this->commands([
             'command.phraseapp:update',
         ]);
-
     }
 
     public function register()
