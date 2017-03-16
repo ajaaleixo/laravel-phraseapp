@@ -10,11 +10,6 @@ return [
     'enabled' => env('PHRASEAPP_CLIENT_ENABLED', true),
 
     /*
-     * API Key.
-     */
-    'api_key' => env('PHRASEAPP_API_KEY'),
-
-    /*
      * Once you setup PhraseApp there will be a project id.
      */
     'project_id' => env('PHRASEAPP_PROJECT_ID'),
@@ -76,5 +71,10 @@ return [
          * Request Timeout.
          */
         'timeout' => 5.0,
+
+        /*
+         * API Key.
+         */
+        'key' => env('PHRASEAPP_API_KEY'),
     ],
 ];
