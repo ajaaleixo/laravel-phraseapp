@@ -32,7 +32,7 @@ class DownloadCommand extends Command
         // Fetch configs
         $enabled = $this->config->get('laravel-phraseapp.enabled');
         $locales = $this->config->get('laravel-phraseapp.locales');
-        $tags = $this->config->get('laravel-phraseapp.tag');
+        $tags = $this->config->get('laravel-phraseapp.tags');
         $seconds = $this->config->get('laravel-phraseapp.api.sleep');
 
         if (!$enabled) {
