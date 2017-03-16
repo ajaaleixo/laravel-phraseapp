@@ -21,7 +21,7 @@ class UpdateCommand extends Command
     public function __construct(Repository $config)
     {
         parent::__construct();
-        
+
         $this->config = $config;
     }
 
