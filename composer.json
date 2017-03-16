@@ -25,7 +25,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Ajaaleixo\\PhraseAppClient\\Test\\": "tests/"
+      "Ajaaleixo\\PhraseApp\\Test\\": "tests/"
     }
   }
 }
