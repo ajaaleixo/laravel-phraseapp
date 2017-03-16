@@ -1,6 +1,6 @@
 {
-  "name": "ajaaleixo/laravel-phraseapp-client",
-  "description": "Laravel PhraseApp Client",
+  "name": "ajaaleixo/laravel-phraseapp",
+  "description": "Laravel PhraseApp Package",
   "keywords": [
     "laravel",
     "phraseapp",
