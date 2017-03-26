@@ -1,4 +1,4 @@
-# Laraval PhraseApp Package
+# Laravel PhraseApp Package
 Supports L5.4
 
 This package offers you a way of downloading translated keys from https://phraseapp.com.
