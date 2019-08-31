@@ -38,10 +38,6 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-      - restore_cache:
-          keys:
-            - node-v1-{{ checksum "package.json" }}
-            - node-v1-
 
       # run tests with phpunit and report back to codacy
       - run: ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
