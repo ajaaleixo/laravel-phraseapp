@@ -1,3 +1,7 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5ff9a31f3a0f4b1c8c6683b88adf37c5)](https://www.codacy.com/app/ajaaleixo/laravel-phraseapp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ajaaleixo/laravel-phraseapp&amp;utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/ajaaleixo/laravel-phraseapp/tree/master.svg?style=svg)](https://circleci.com/gh/ajaaleixo/laravel-phraseapp/tree/master)
+[![Downloads](https://img.shields.io/packagist/dt/ajaaleixo/laravel-phraseapp)](https://packagist.org/packages/ajaaleixo/laravel-phraseapp)
+
 # Laravel PhraseApp Package
 Supports L5.4
 

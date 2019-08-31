@@ -24,7 +24,8 @@
     "phpunit/phpunit": "5.7.*",
     "orchestra/testbench": "~3.4",
     "mockery/mockery": "0.9.*",
-    "phpunit/php-code-coverage": "^4.0.3"
+    "phpunit/php-code-coverage": "^4.0.3",
+    "codacy/coverage": "dev-master"
   },
   "autoload": {
     "psr-4": {
