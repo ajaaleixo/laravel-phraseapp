@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Ajaaleixo\PhraseApp\Tests;
 
 use Ajaaleixo\PhraseApp\Client\PhraseAppClient;
 use Ajaaleixo\PhraseApp\PhraseAppServiceProvider;
