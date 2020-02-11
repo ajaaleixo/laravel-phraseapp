@@ -45,7 +45,6 @@ class PhraseAppClient
         float $timeout = 5.0,
         string $format = 'laravel'
     ) {
-
         $this->withProject($projectId);
         $this->withAuthorization($apiKey);
         $this->withIdentification($identification);

@@ -2,8 +2,8 @@
 
 namespace Ajaaleixo\PhraseApp;
 
-use Illuminate\Support\ServiceProvider;
 use Ajaaleixo\PhraseApp\Commands\DownloadCommand;
+use Illuminate\Support\ServiceProvider;
 
 class PhraseAppServiceProvider extends ServiceProvider
 {

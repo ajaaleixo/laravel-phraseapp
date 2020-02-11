@@ -8,8 +8,6 @@ class UpdateCommandTest extends TestCase
 {
     public function testUpdateLocaleFiles()
     {
-
-
+        //
     }
-
 }
