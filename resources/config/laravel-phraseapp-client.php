@@ -2,7 +2,6 @@
 
 return [
 
-
     /*
      * Master switch to enable or disable the prasheapp client.
      * Default is true
