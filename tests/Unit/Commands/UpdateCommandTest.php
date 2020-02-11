@@ -1,10 +1,8 @@
 <?php
 
-namespace Tests\Unit\Commands;
+namespace Ajaaleixo\PhraseApp\Tests\Unit\Commands;
 
-use Tests\TestCase;
-use Tests\Unit\Client\PhraseAppClientTest;
-use Ajaaleixo\PhraseApp\Client\PhraseAppClient;
+use Ajaaleixo\PhraseApp\Tests\TestCase;
 
 class UpdateCommandTest extends TestCase
 {

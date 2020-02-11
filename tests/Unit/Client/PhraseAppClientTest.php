@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Unit\Client;
+namespace Ajaaleixo\PhraseApp\Tests\Unit\Client;
 
 use Ajaaleixo\PhraseApp\Client\PhraseAppClient;
-use Tests\TestCase;
+use Ajaaleixo\PhraseApp\Tests\TestCase;
 
 class PhraseAppClientTest extends TestCase
 {
