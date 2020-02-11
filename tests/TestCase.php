@@ -29,25 +29,25 @@ class TestCase extends OrchestraTestCase
     {
         return [
             [
-                "id" => "abcd1234cdef1234abcd1234cdef1234",
-                "name" => "de",
-                "code" => "de-DE",
-                "default" => true,
-                "main" => false,
-                "rtl" => false,
-                "plural_forms" => [
-                    "zero",
-                    "one",
-                    "other"
+                'id' => 'abcd1234cdef1234abcd1234cdef1234',
+                'name' => 'de',
+                'code' => 'de-DE',
+                'default' => true,
+                'main' => false,
+                'rtl' => false,
+                'plural_forms' => [
+                    'zero',
+                    'one',
+                    'other',
                 ],
-                "source_locale" => [
-                    "id" => "abcd1234cdef1234abcd1234cdef1234",
-                    "name" => "en",
-                    "code" => "en-GB"
+                'source_locale' => [
+                    'id' => 'abcd1234cdef1234abcd1234cdef1234',
+                    'name' => 'en',
+                    'code' => 'en-GB',
                 ],
-                "created_at" => "2015-01-28T09:52:53Z",
-                "updated_at" => "2015-01-28T09:52:53Z",
-            ]
+                'created_at' => '2015-01-28T09:52:53Z',
+                'updated_at' => '2015-01-28T09:52:53Z',
+            ],
         ];
     }
 }

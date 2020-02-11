@@ -34,8 +34,9 @@ class DownloadCommand extends Command
         $tags = $this->config->get('laravel-phraseapp.tags');
         $seconds = $this->config->get('laravel-phraseapp.api.sleep');
 
-        if (!$enabled) {
+        if (! $enabled) {
             $this->warn('laravel-phraseapp not enabled! Check config!');
+
             return;
         }
 
@@ -45,7 +46,6 @@ class DownloadCommand extends Command
         // Fetch translation per tag per locale
         foreach ($locales as $locale) {
             foreach ($tags as $tag) {
-
                 $this->info(sprintf('Fetching [%s] [tag:%s]', $locale, $tag));
 
                 $content = $client->downloadLocale($locale, $tag);

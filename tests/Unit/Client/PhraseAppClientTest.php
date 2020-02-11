@@ -16,7 +16,7 @@ class PhraseAppClientTest extends TestCase
 
         $this->assertEquals($localesExpectedList, $result);
     }
-    
+
     public function testClientCanBeInitializedWithoutIdentificationAndTimeout()
     {
         $projectId = 'xpto';
